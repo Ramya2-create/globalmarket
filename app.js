@@ -10,9 +10,8 @@ var contactRouter =  require('./routes/contact')
 var cors = require('cors')
 
 var app = express();
-app.use(cors({
-  origin: 'https://srglobalmarket.vercel.app', // Allow only your frontend to make requests
-}));
+app.use(cors())
+  
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
